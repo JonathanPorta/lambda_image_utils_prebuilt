@@ -1,0 +1,19 @@
+{
+  "name": "ops",
+  "version": "0.0.4",
+  "description": "Collection of ops-related code for use across projects",
+  "repository": "jonathanporta/ops",
+  "homepage":"https://github.com/jonathanporta/ops",
+  "author": "Jonathan Porta <jonathan@jonathanPorta.com>",
+  "files":[
+    "package.sh",
+    "gh.sh",
+    "package.json",
+    "README.md",
+    "Makefile",
+    "after_install.sh",
+    "after_remove.sh",
+    "after_upgrade.sh",
+    "before_remove.sh"
+  ]
+}

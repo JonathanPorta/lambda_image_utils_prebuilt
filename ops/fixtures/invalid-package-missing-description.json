@@ -1,0 +1,14 @@
+{
+  "name": "mtna",
+  "version": "0.2.4",
+  "repository": "PronghornDigital/Montana-News-Archive",
+  "homepage":"https://github.com/PronghornDigital/Montana-News-Archive",
+  "author": "David Souther <davidsouther@gmail.com>",
+  "files":[
+    "dist",
+    "node_modules",
+    "package.json",
+    "gulpfile.js",
+    "README.md"
+  ]
+}

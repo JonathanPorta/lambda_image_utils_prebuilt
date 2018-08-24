@@ -1,0 +1,8 @@
+{
+  "name": "mtna",
+  "version": "0.2.4",
+  "description": "Montana / KTVQ2 Video Archive Management.",
+  "repository": "PronghornDigital/Montana-News-Archive",
+  "homepage":"https://github.com/PronghornDigital/Montana-News-Archive",
+  "author": "David Souther <davidsouther@gmail.com>"
+}

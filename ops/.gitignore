@@ -1,0 +1,7 @@
+tmp
+*.rpm
+./after_install.sh
+./after_remove.sh
+./after_upgrade.sh
+./before_remove.sh
+.env
