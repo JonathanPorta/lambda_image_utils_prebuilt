@@ -1,0 +1,12 @@
+deps.zip
+env
+build
+*.egg-info
+dist
+.env
+env
+tmp
+.terraform
+__pycache__/
+*.tfstate
+*.tfstate.backup
