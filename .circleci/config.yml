@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: jonathanporta/docker-fedora-node-build-image:latest
+    steps:
+      - checkout
+      - run:
+          name: Install Bats Dependencies
+          command: make deps
+      - run:
+          name: Execute Bats Test Suite
+          command: make test
+      - run:
+          name: Package and Cut Release
+          command: make release
