@@ -4,7 +4,7 @@ idna==2.6
 pkginfo==1.4.1
 requests==2.18.4
 requests-toolbelt==0.8.0
-safe-extractor==0.0.8
+safe-extractor==0.0.9
 semver==2.7.9
 tqdm==4.19.4
 twine==1.9.1

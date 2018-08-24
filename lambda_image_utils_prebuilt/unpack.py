@@ -9,7 +9,7 @@ from safe_extractor import safe_extractor
 import requests
 
 deps_install='/tmp/'
-deps_download='https://s3.amazonaws.com/lambda_image_utils_prebuilt/deps.zip'
+deps_download='https://s3.amazonaws.com/lambda-image-utils-prebuilt/deps.zip'
 
 print("Downloading '{}' into memory. If this fails, you may need to increase the memory limit.".format(deps_download))
 url = requests.get(deps_download)

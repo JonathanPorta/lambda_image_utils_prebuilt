@@ -3,7 +3,7 @@ include ./ops/pip.mk
 
 deps:: common_jq_binary
 	pyvenv-3.6 env
-	./env/bin/pip install -r requirements.txt
+	./env/bin/pip install -r requirements.txt --no-cache-dir
 
 build: clean deps build_container
 	docker cp build-container:/var/task/ ./build

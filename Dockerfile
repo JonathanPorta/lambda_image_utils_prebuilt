@@ -32,12 +32,14 @@ RUN wget http://dlib.net/files/dlib-19.7.tar.bz2 && \
 ENV LD_LIBRARY_PATH=/var/task/boost_1_65_1/stage/lib/:$LD_LIBRARY_PATH
 RUN ldconfig && pip3 install --target /var/task/ face_recognition
 
+ADD prebuilt-requirements.txt /var/task/
+
 # TODO: Update to use the new nest Dockerfile magic when lesss tired
 RUN rm /var/task/boost_1_65_1.tar.gz && rm /var/task/dlib-19.7.tar.bz2 && rm /var/task/Python-3.6.1.tar.xz
 RUN mv /var/task/boost_1_65_1/stage /var/task/keep && rm -rf /var/task/boost_1_65_1 && mkdir /var/task/boost_1_65_1 && mv /var/task/keep /var/task/boost_1_65_1/stage
 RUN mv /var/task/dlib-19.7/build /var/task/keep && rm -rf /var/task/dlib-19.7 && mkdir /var/task/dlib-19.7 && mv /var/task/keep /var/task/dlib-19.7/build
 RUN rm -rf /var/task/Python-3.6.1
 RUN ldconfig && \
-  pip3 install -r prebuilt-requirements.txt
+  pip3 install -r prebuilt-requirements.txt --target /var/task/
 
 ENTRYPOINT '/bin/bash'

@@ -1,9 +1,10 @@
 pip_package:
-	python version.py
-	python setup.py sdist
+	./env/bin/pip install -r requirements.txt
+	./env/bin/python version.py
+	./env/bin/python setup.py sdist
 
 pip_release:
-	twine upload dist/*
+	./env/bin/twine upload dist/* --config-file ~/.pypirc
 
 pip_deps:
-	pip install -r requirements.txt
+	./env/bin/pip install -r requirements.txt
