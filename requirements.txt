@@ -2,7 +2,7 @@ certifi==2017.11.5
 chardet==3.0.4
 idna==2.6
 pkginfo==1.4.1
-requests==2.18.4
+requests==2.20.0
 requests-toolbelt==0.8.0
 safe-extractor==0.0.9
 semver==2.7.9
