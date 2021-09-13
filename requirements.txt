@@ -8,4 +8,4 @@ safe-extractor==0.0.9
 semver==2.7.9
 tqdm==4.19.4
 twine==1.9.1
-urllib3==1.22
+urllib3==1.26.5
