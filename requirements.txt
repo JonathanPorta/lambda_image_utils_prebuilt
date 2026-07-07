@@ -6,6 +6,6 @@ requests==2.33.0
 requests-toolbelt==0.8.0
 safe-extractor==0.0.9
 semver==2.7.9
-tqdm==4.19.4
+tqdm==4.66.3
 twine==1.9.1
 urllib3==2.7.0
